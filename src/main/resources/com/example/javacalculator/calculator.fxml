@@ -177,7 +177,7 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="134.0" layoutY="287.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text=",">
+            <Button layoutX="134.0" layoutY="287.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="." onAction="#insertComma">
                <font>
                   <Font size="18.0" />
                </font></Button>

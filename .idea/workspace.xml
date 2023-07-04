@@ -5,16 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb166f9c-cf46-4bb2-8ced-4a2f54f34c83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/javacalculator/calculator.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javacalculator/RPN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javacalculator/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javacalculator/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javacalculator/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javacalculator/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javacalculator/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javacalculator/calculator.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javacalculator/calculator.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,7 +70,10 @@
       <option name="presentableId" value="Default" />
       <updated>1688322263946</updated>
       <workItem from="1688322264952" duration="2138000" />
-      <workItem from="1688387952521" duration="8516000" />
+      <workItem from="1688387952521" duration="9528000" />
+      <workItem from="1688421044218" duration="3017000" />
+      <workItem from="1688451564170" duration="1640000" />
+      <workItem from="1688450167596" duration="1803000" />
     </task>
     <servers />
   </component>
