@@ -85,7 +85,7 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="346.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
          <children>
-            <TextField alignment="CENTER_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="240.0" fx:id="expression" editable="false">
+            <TextField fx:id="expression" alignment="CENTER_RIGHT" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="240.0">
                <font>
                   <Font size="24.0" />
                </font></TextField>
@@ -93,95 +93,95 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="74.0" layoutY="87.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="CE" onAction="#clear">
+            <Button layoutX="74.0" layoutY="87.0" mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="60.0" text="CE">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="134.0" layoutY="87.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="C" onAction="#clear">
+            <Button layoutX="134.0" layoutY="87.0" mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="60.0" text="C">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="194.0" layoutY="87.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="&lt;--" onAction="#backspace">
+            <Button layoutX="194.0" layoutY="87.0" mnemonicParsing="false" onAction="#backspace" prefHeight="40.0" prefWidth="60.0" text="&lt;--">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="14.0" layoutY="127.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="1/x">
+            <Button layoutX="14.0" layoutY="127.0" mnemonicParsing="false" onAction="#insertLeftBracket" prefHeight="40.0" prefWidth="60.0" text="(">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="74.0" layoutY="127.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="x^2">
+            <Button layoutX="74.0" layoutY="127.0" mnemonicParsing="false" onAction="#insertRightBracket" prefHeight="40.0" prefWidth="60.0" text=")">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="134.0" layoutY="127.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="√x">
+            <Button layoutX="134.0" layoutY="127.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="√x" onAction="#findSquareRoot">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="194.0" layoutY="127.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="/" onAction="#insertMathOperator">
+            <Button layoutX="194.0" layoutY="127.0" mnemonicParsing="false" onAction="#insertMathOperator" prefHeight="40.0" prefWidth="60.0" text="/">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="14.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="7" onAction="#insertNumber">
+            <Button layoutX="14.0" layoutY="167.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="7">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="74.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="8" onAction="#insertNumber">
+            <Button layoutX="74.0" layoutY="167.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="8">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="134.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="9" onAction="#insertNumber">
+            <Button layoutX="134.0" layoutY="167.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="9">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="194.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="*" onAction="#insertMathOperator">
+            <Button layoutX="194.0" layoutY="167.0" mnemonicParsing="false" onAction="#insertMathOperator" prefHeight="40.0" prefWidth="60.0" text="*">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="14.0" layoutY="207.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="4" onAction="#insertNumber">
+            <Button layoutX="14.0" layoutY="207.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="4">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="74.0" layoutY="207.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="5" onAction="#insertNumber">
+            <Button layoutX="74.0" layoutY="207.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="5">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="134.0" layoutY="207.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="6" onAction="#insertNumber">
+            <Button layoutX="134.0" layoutY="207.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="6">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="194.0" layoutY="207.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="-" onAction="#insertMathOperator">
+            <Button layoutX="194.0" layoutY="207.0" mnemonicParsing="false" onAction="#insertMathOperator" prefHeight="40.0" prefWidth="60.0" text="-">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="14.0" layoutY="247.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="1" onAction="#insertNumber">
+            <Button layoutX="14.0" layoutY="247.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="1">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="74.0" layoutY="247.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="2" onAction="#insertNumber">
+            <Button layoutX="74.0" layoutY="247.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="2">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="134.0" layoutY="247.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="3" onAction="#insertNumber">
+            <Button layoutX="134.0" layoutY="247.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="3">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="194.0" layoutY="247.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="+" onAction="#insertMathOperator">
+            <Button layoutX="194.0" layoutY="247.0" mnemonicParsing="false" onAction="#insertMathOperator" prefHeight="40.0" prefWidth="60.0" text="+">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="14.0" layoutY="287.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="+/-">
+            <Button layoutX="14.0" layoutY="287.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="+/-" onAction="#changeSign">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="74.0" layoutY="287.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="0" onAction="#insertNumber">
+            <Button layoutX="74.0" layoutY="287.0" mnemonicParsing="false" onAction="#insertNumber" prefHeight="40.0" prefWidth="60.0" text="0">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="134.0" layoutY="287.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="." onAction="#insertComma">
+            <Button layoutX="134.0" layoutY="287.0" mnemonicParsing="false" onAction="#insertComma" prefHeight="40.0" prefWidth="60.0" text=".">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="194.0" layoutY="287.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="=" textAlignment="CENTER" onAction="#calculate">
+            <Button layoutX="194.0" layoutY="287.0" mnemonicParsing="false" onAction="#calculate" prefHeight="40.0" prefWidth="60.0" text="=" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font></Button>

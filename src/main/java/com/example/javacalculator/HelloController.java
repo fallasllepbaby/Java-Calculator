@@ -15,6 +15,10 @@ public class HelloController {
 
     private boolean hasCalculated = false;
 
+    private boolean hasRightBracket = false;
+
+    private boolean hasLeftBracket = false;
+
 
     public void initialize() {
         expression.setText("0");
@@ -68,30 +72,8 @@ public class HelloController {
     @FXML
     private void calculate() {
         if ( !(expression.getText(expression.getLength() - 1, expression.getLength()).equals(mathOperator)) && (expression.getText().contains("+") || expression.getText().contains("*") || expression.getText().contains("/") || expression.getText().contains("-"))) {
-            if (mathOperator.equals("+") || mathOperator.equals("*")) {
-                mathOperator = "\\" + mathOperator;
-            }
-            String[] tokens = expression.getText().split(mathOperator);
-
-            double expressionResult = 0;
-            switch (mathOperator) {
-                case "-" :
-                    expressionResult = Double.parseDouble(tokens[0]) - Double.parseDouble(tokens[1]);
-                    break;
-                case "/" :
-                    expressionResult = Double.parseDouble(tokens[0]) / Double.parseDouble(tokens[1]);
-                    break;
-                case "\\*" :
-                    expressionResult = Double.parseDouble(tokens[0]) * Double.parseDouble(tokens[1]);
-                    break;
-                case "\\+" :
-                    expressionResult = Double.parseDouble(tokens[0]) + Double.parseDouble(tokens[1]);
-                    break;
-            }
-
-            outPutExpression = new StringBuilder(String.valueOf(expressionResult));
+            outPutExpression = new StringBuilder("" + RPN.calculate(expression.getText()));
             expression.setText(outPutExpression.toString());
-            hasCalculated = true;
         }
     }
 
@@ -101,6 +83,61 @@ public class HelloController {
             outPutExpression = new StringBuilder(expression.getText());
             outPutExpression.append(btn.getText());
             expression.setText(outPutExpression.toString());
+        }
+    }
+
+    public void insertLeftBracket(ActionEvent event) {
+        Button btn = (Button) event.getSource();
+        if (expression.getText().length() == 1) {
+            outPutExpression = new StringBuilder("");
+        } else {
+            outPutExpression = new StringBuilder(expression.getText());
+        }
+        outPutExpression.append(btn.getText());
+        expression.setText(outPutExpression.toString());
+
+        hasLeftBracket = true;
+    }
+
+    public void insertRightBracket(ActionEvent event) {
+        if (hasLeftBracket) {
+            Button btn = (Button) event.getSource();
+            outPutExpression = new StringBuilder(expression.getText());
+            outPutExpression.append(btn.getText());
+            expression.setText(outPutExpression.toString());
+            hasRightBracket = true;
+            hasLeftBracket = false;
+        }
+    }
+
+    public void changeSign(ActionEvent event) {
+        if (isNumeric(expression.getText())) {
+            outPutExpression = new StringBuilder(expression.getText());
+            if (Double.parseDouble(expression.getText()) < 0) {
+                outPutExpression.delete(0,1);
+            } else if (Double.parseDouble(expression.getText()) > 0) {
+                outPutExpression.insert(0, "-");
+            }
+            expression.setText(outPutExpression.toString());
+        }
+    }
+
+    public static boolean isNumeric(String strNum) {
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            double d = Double.parseDouble(strNum);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
+    }
+
+    public void findSquareRoot(ActionEvent event) {
+        if (isNumeric(expression.getText())) {
+            double result = Math.sqrt(Double.parseDouble(expression.getText()));
+            expression.setText(String.format("%.2f", result));
         }
     }
 }
