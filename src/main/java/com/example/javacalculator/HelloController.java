@@ -148,6 +148,7 @@ public class HelloController {
             ex = ex.replace(",", ".");
             double result = Math.sqrt(Double.parseDouble(ex));
             String resultString = String.format("%.2f", result);
+            outPutExpression = new StringBuilder(resultString);
             expression.setText(resultString);
         }
     }
@@ -158,6 +159,7 @@ public class HelloController {
             ex = ex.replace("," , ".");
             double result = Math.pow(Double.parseDouble(ex), 2);
             String resultString = String.format("%.2f", result);
+            outPutExpression = new StringBuilder(resultString);
             expression.setText(resultString);
         }
     }

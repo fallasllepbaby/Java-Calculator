@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb166f9c-cf46-4bb2-8ced-4a2f54f34c83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javacalculator/calculator.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javacalculator/calculator.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="bb166f9c-cf46-4bb2-8ced-4a2f54f34c83" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +74,7 @@
       <workItem from="1688576076397" duration="5230000" />
       <workItem from="1688656484237" duration="5634000" />
       <workItem from="1688737356239" duration="1983000" />
-      <workItem from="1688742747665" duration="6442000" />
+      <workItem from="1688742747665" duration="6859000" />
     </task>
     <servers />
   </component>
