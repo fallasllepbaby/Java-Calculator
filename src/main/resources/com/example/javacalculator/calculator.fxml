@@ -105,15 +105,15 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="14.0" layoutY="127.0" mnemonicParsing="false" onAction="#insertLeftBracket" prefHeight="40.0" prefWidth="60.0" text="(">
+            <Button layoutX="14.0" layoutY="127.0" mnemonicParsing="false" onAction="#findSquareRoot" prefHeight="40.0" prefWidth="60.0" text="√x">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="74.0" layoutY="127.0" mnemonicParsing="false" onAction="#insertRightBracket" prefHeight="40.0" prefWidth="60.0" text=")">
+            <Button layoutX="74.0" layoutY="127.0" mnemonicParsing="false" onAction="#insertLeftBracket" prefHeight="40.0" prefWidth="60.0" text="(">
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="134.0" layoutY="127.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="√x" onAction="#findSquareRoot">
+            <Button layoutX="134.0" layoutY="127.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text=")" onAction="#insertRightBracket">
                <font>
                   <Font size="18.0" />
                </font></Button>

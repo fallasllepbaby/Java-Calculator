@@ -83,6 +83,7 @@ public class RPN {
                     i++;
                     if (i == expressionArray.length) break;
                 }
+                a = a.replace(",", ".");
                 temp.push(Double.parseDouble(a));
                 i--;
             } else if (isOperator(expressionArray[i])) {

@@ -115,9 +115,11 @@ public class HelloController {
     public void changeSign(ActionEvent event) {
         if (isNumeric(expression.getText())) {
             outPutExpression = new StringBuilder(expression.getText());
-            if (Double.parseDouble(expression.getText()) < 0) {
+            String ex = expression.getText();
+            ex = ex.replace(",", ".");
+            if (Double.parseDouble(ex) < 0) {
                 outPutExpression.delete(0,1);
-            } else if (Double.parseDouble(expression.getText()) > 0) {
+            } else if (Double.parseDouble(ex) > 0) {
                 outPutExpression.insert(0, "-");
             }
             expression.setText(outPutExpression.toString());
@@ -125,7 +127,7 @@ public class HelloController {
     }
 
     public static boolean isNumeric(String strNum) {
-        String num = "0123456789,.";
+        String num = "0123456789,.-";
         ArrayList<Character> numbers = new ArrayList<>();
         for (int i = 0; i < num.length(); i++) {
             numbers.add(num.charAt(i));
