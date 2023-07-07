@@ -151,4 +151,14 @@ public class HelloController {
             expression.setText(resultString);
         }
     }
+
+    public void findSquare(ActionEvent event) {
+        if (isNumeric(expression.getText())) {
+            String ex = expression.getText();
+            ex = ex.replace("," , ".");
+            double result = Math.pow(Double.parseDouble(ex), 2);
+            String resultString = String.format("%.2f", result);
+            expression.setText(resultString);
+        }
+    }
 }

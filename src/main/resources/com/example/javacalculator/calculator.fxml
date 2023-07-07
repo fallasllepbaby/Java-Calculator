@@ -89,7 +89,7 @@
                <font>
                   <Font size="24.0" />
                </font></TextField>
-            <Button layoutX="14.0" layoutY="87.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="\%">
+            <Button layoutX="14.0" layoutY="87.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="x2" onAction="#findSquare">
                <font>
                   <Font size="18.0" />
                </font></Button>
