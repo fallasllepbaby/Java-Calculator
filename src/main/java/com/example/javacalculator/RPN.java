@@ -5,9 +5,25 @@ import java.util.Stack;
 // Reverse Polish Notation
 public class RPN {
     public static double calculate(String expression) {
-        String output = getExpression(expression);
-        double result = count(output);
-        return result;
+        String preparedExpression = prepareExpression(expression);
+        String output = getExpression(preparedExpression);
+        return count(output);
+    }
+
+    private static String prepareExpression(String expression) {
+        String preparedExpression = "";
+        for (int token = 0; token < expression.length(); token++) {
+            char symbol = expression.charAt(token);
+            if (symbol == '-') {
+                if (token == 0) {
+                    preparedExpression += '0';
+                } else if(expression.charAt(token - 1) == '(') {
+                    preparedExpression += '0';
+                }
+            }
+            preparedExpression += symbol;
+        }
+        return preparedExpression;
     }
 
     private static String getExpression(String expression) {
@@ -33,7 +49,7 @@ public class RPN {
                 } else if (expressionArray[i] == ')') {
                     char s = operStack.pop();
                     while (s != '(') {
-                        output += s + ' ';
+                        output += s + " ";
                         s = operStack.pop();
                     }
                 } else {
@@ -59,7 +75,7 @@ public class RPN {
         Stack<Double> temp = new Stack<Double>();
         char[] expressionArray = expression.toCharArray();
 
-         for (int i = 0; i < expression.length(); i++) {
+        for (int i = 0; i < expression.length(); i++) {
             if (Character.isDigit(expressionArray[i])) {
                 String a = "";
                 while (!IsDelimeter(expressionArray[i]) && !isOperator(expressionArray[i])) {

@@ -6,6 +6,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.util.ArrayList;
+
 public class HelloController {
     private StringBuilder outPutExpression;
 
@@ -123,21 +125,28 @@ public class HelloController {
     }
 
     public static boolean isNumeric(String strNum) {
-        if (strNum == null) {
-            return false;
+        String num = "0123456789,.";
+        ArrayList<Character> numbers = new ArrayList<>();
+        for (int i = 0; i < num.length(); i++) {
+            numbers.add(num.charAt(i));
         }
-        try {
-            double d = Double.parseDouble(strNum);
-        } catch (NumberFormatException nfe) {
-            return false;
+
+        for (int i = 0; i < strNum.length(); i++) {
+            if (!numbers.contains(strNum.charAt(i))) {
+                return false;
+            }
         }
+
         return true;
     }
 
     public void findSquareRoot(ActionEvent event) {
         if (isNumeric(expression.getText())) {
-            double result = Math.sqrt(Double.parseDouble(expression.getText()));
-            expression.setText(String.format("%.2f", result));
+            String ex = expression.getText();
+            ex = ex.replace(",", ".");
+            double result = Math.sqrt(Double.parseDouble(ex));
+            String resultString = String.format("%.2f", result);
+            expression.setText(resultString);
         }
     }
 }
