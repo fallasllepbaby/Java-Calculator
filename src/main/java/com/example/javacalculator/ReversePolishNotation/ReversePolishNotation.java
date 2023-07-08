@@ -1,8 +1,8 @@
 package com.example.javacalculator.ReversePolishNotation;
 
 import static com.example.javacalculator.ReversePolishNotation.ExpressionPreparator.prepareExpression;
-import static PostfixExpressionConverter.convertToPostfixExpression;
-import static PostfixExpressionCounter.count;
+import static com.example.javacalculator.ReversePolishNotation.PostfixExpressionConverter.convertToPostfixExpression;
+import static com.example.javacalculator.ReversePolishNotation.PostfixExpressionCounter.count;
 
 // Reverse Polish Notation
 public class ReversePolishNotation {
