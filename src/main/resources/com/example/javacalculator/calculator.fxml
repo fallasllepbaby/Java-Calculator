@@ -42,7 +42,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="370.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javacalculator.HelloController">
+<VBox prefHeight="370.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javacalculator.CalculatorController">
   <children>
     <MenuBar prefHeight="0.0" prefWidth="571.0" VBox.vgrow="NEVER">
       <menus>
@@ -89,7 +89,7 @@
                <font>
                   <Font size="24.0" />
                </font></TextField>
-            <Button layoutX="14.0" layoutY="87.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="x2" onAction="#findSquare">
+            <Button layoutX="14.0" layoutY="87.0" mnemonicParsing="false" onAction="#findSquare" prefHeight="40.0" prefWidth="60.0" text="x^2">
                <font>
                   <Font size="18.0" />
                </font></Button>
@@ -113,7 +113,7 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="134.0" layoutY="127.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text=")" onAction="#insertRightBracket">
+            <Button layoutX="134.0" layoutY="127.0" mnemonicParsing="false" onAction="#insertRightBracket" prefHeight="40.0" prefWidth="60.0" text=")">
                <font>
                   <Font size="18.0" />
                </font></Button>
@@ -169,7 +169,7 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button layoutX="14.0" layoutY="287.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="+/-" onAction="#changeSign">
+            <Button layoutX="14.0" layoutY="287.0" mnemonicParsing="false" onAction="#changeSign" prefHeight="40.0" prefWidth="60.0" text="+/-">
                <font>
                   <Font size="18.0" />
                </font></Button>

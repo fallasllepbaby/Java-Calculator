@@ -1,14 +1,14 @@
 package com.example.javacalculator;
 
+import com.example.javacalculator.ReversePolishNotation.ReversePolishNotation;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.util.ArrayList;
 
-public class HelloController {
+public class CalculatorController {
     private StringBuilder outPutExpression;
 
     public TextField expression;
@@ -74,7 +74,7 @@ public class HelloController {
     @FXML
     private void calculate() {
         if ( !(expression.getText(expression.getLength() - 1, expression.getLength()).equals(mathOperator)) && (expression.getText().contains("+") || expression.getText().contains("*") || expression.getText().contains("/") || expression.getText().contains("-"))) {
-            outPutExpression = new StringBuilder("" + RPN.calculate(expression.getText()));
+            outPutExpression = new StringBuilder("" + ReversePolishNotation.calculate(expression.getText()));
             expression.setText(outPutExpression.toString());
         }
     }
